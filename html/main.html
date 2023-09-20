@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width">
+	<meta name="author" content="jinwook kim" />
+	<!-- begin open graph	-->
+	<meta property="og:url"                content="" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="jinwook kim portfolio" />
+	<meta property="og:description"        content="프로젝트 정보 정리" />
+	<meta property="og:image"              content="" />
+	<!-- //end open graph	-->
+	<title>김진욱 포트폴리오</title>
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/icon-favi.png">
+	<link rel="stylesheet" type="text/css" href="../css/jquery.fullpage.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/main.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+
+	<script src="../js/jquery-3.5.1.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/scrolloverflow.js"></script>
+	<script type="text/javascript" src="../js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+					$('#fullpage').fullpage({
+							/*sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', '#fff'],*/
+							slidesNavigation: true,
+							slidesToSections: true,
+							responsiveWidth: true,
+							responsiveSlides: true,
+						
+							responsiveSlidesKey: 'YWx2YXJvdHJpZ28uY29tX3RoVWNtVnpjRzl1YzJsMlpWTnNhV1JsY3c9PUVZdg==',
+							afterSlideLoad: function(section, origin, destination, direction){
+									console.log({
+											section: section,
+											origin: origin,
+											destination: destination,
+											direction: direction
+									});
+							},
+							onSlideLeave: function(section, origin, destination, direction){
+									console.log({
+											section: section,
+											origin: origin,
+											destination: destination,
+											direction: direction
+									});
+							},
+							keyboardScrolling:true,
+							autoScrolling:true,
+							/*scrollBar:false,*/
+							'navigation': true,
+							'navigationPosition': 'right',
+							'navigationTooltips': ['section0', 'section1', 'section2', 'section3'],
+							'afterLoad': function(anchorLink, index){
+									if(index == 2){
+											$('.sec-box01, .sec-box02, .sec-box03').addClass('active');
+									} else if(index == 3) {
+											$('.sec-box04, .sec-box05, .sec-box06').addClass('active');
+									}
+							},
+					});
+			});
+			$(document).ready(function () {
+					var windowWidth = $(window).width();
+					
+					if('windowWidth  < 768') {
+						$('#fullpage').fullpage('autoScrolling','false')
+					} else {
+						$('#fullpage').fullpage('autoScrolling','true')
+					}
+			});
+	</script>
+</head>
+<body>
+<div class="header-wrap">
+    <input id="m-menu" class="menu-ch" type="checkbox" />
+    <label for="m-menu" id="menu-check">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+	<nav>
+		<ul class="header-menu">
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="sub.html">Profile</a></li>
+			<li><a href="#section3">Contact</a></li>
+		</ul>
+	</nav>
+</div>
+<div id="fullpage">
+	<div class="section active" id="section0 downArrow">
+		
+		<div class="randing-sec main">
+			<h2>What I do, What I use</h2>
+			<P>I creative websites</P>
+			<p>And make them alive on the internet</p>
+			<ul>
+				<li>HTML5</li>
+				<li>CSS3</li>
+				<li>Javascript</li>
+			</ul>
+		</div>
+		<div class="blur-container" style="--blur:12vw;">
+  			<div class="shape" style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);"></div>
+			<div class="shape" 
+				style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);
+				--offset:180deg;
+				--speed: 6000ms;
+				--background: linear-gradient( cyan, blue, green, purple, cyan);
+				">
+			</div>
+		</div>
+		<div class="slider-down-arrow"><a href="#" class="bounce"><span class="txt-hidden">scroll down</span><i class="fa fa-angle-double-down"></i></a></div>
+	</div>
+	<div class="section" id="section1">
+		<div class="sec-txt-wrap">
+			<h2>About Me</h2>
+			<p class="sec-sub-txt">그저 단순히 일하는 것이 아닌 무엇이 더 사용자의 경험에 좋은지 고민하고<br/>더 깊은 전문성을 위해 노력하는 개발자 김진욱입니다.</p>
+			<a href="about.html" class="btn-classic">Read More<span></span></a>
+			<div class="sec-link-area">
+				<div class="sec-box01">
+					<a href="about.html">
+					<p class="tit">Work</p>
+					<p class="sub-txt fl">2020.09 ~ 2023.01<br/>텐바이텐</p>
+					<p class="sub-txt fl">2017.02 ~ 2020.08<br/>amoeba</p>
+					<p class="sub-txt fr">2013.05 ~ 2014.08<br/>S2 publishing</p>
+					</a>
+				</div>
+				<div class="sec-box02">
+					<a href="about.html">
+					<p class="tit">Education</p>
+					<p class="sub-txt fl">2016 - 2016<br/>멀티캠퍼스</p>
+						<p class="sub-txt fr">2012 - 2013<br/>한국직업전문학교</p>
+					</a>
+				</div>
+				<div class="sec-box03">
+					<a href="about.html">
+					<p class="tit">Profile</p>
+					<p class="sub-txt">김진욱</p>
+					</a>
+				</div>
+			</div>
+			<div class="blur-container" style="--blur:12vw;">
+				<div class="shape" style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);"></div>
+			  <div class="shape" 
+				  style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);
+				  --offset:180deg;
+				  --speed: 6000ms;
+				  --background: linear-gradient( cyan, blue, green, purple, cyan);
+				  ">
+			  </div>
+		  	</div>
+		</div>
+	</div>
+	<div class="section" id="section2">
+		<div class="sec-txt-wrap">
+			<h2>Project</h2>
+			<p class="sec-sub-txt">다양한 프로젝트를 경험 했습니다.</p>
+			<a href="sub.html" class="btn-classic">Read More<span></span></a>
+			<!-- <div class="sec-link-area">
+				<div class="sec-box04">
+					<a href="sub_detail11.html">
+						<p class="tit">LG</p>
+						<p class="sub-txt">Lg 모니터 화면검사 자동화 시스템 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.04 - 2020.06</p>
+					</a>
+				</div>
+				<div class="sec-box05">
+					<a href="sub_detail10.html">
+						<p class="tit">B tv</p>
+						<p class="sub-txt">Btv Plus 모바일 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.05 - 2020.05</p>
+					</a>
+				</div>
+				<div class="sec-box06">
+					<a href="sub_detail09.html">
+						<p class="tit">LG</p>
+						<p class="sub-txt">LG 세탁기연구개발 platform 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.02 - 2020.03</p>
+					</a>
+				</div>
+			</div> -->
+			<!-- 슬라이더 이미지 -->
+			<section class="slider-container">
+				<h1 class="title-of-slider">PROJECT <span class="bolden"> 2023 COLLECTION</span></h1>
+				<div id="image-container">
+					<div class="model-images">
+						<p class="tit">텐바이텐</p>
+						<p class="sub-txt">딜 상품 리뉴얼</p>
+						<p class="sub-txt">텐바이텐<br/>2022.09 - 2022.12</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">텐바이텐</p>
+						<p class="sub-txt">메인 UI 리뉴얼</p>
+						<p class="sub-txt">텐바이텐<br/>2022.04 - 2022.04</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">텐바이텐</p>
+						<p class="sub-txt">20주년 프로젝트</p>
+						<p class="sub-txt">텐바이텐<br/>2021.09 - 2021.09</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">텐바이텐</p>
+						<p class="sub-txt">B2B 프로젝트</p>
+						<p class="sub-txt">텐바이텐<br/>2021.02 - 2021.04</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">텐바이텐</p>
+						<p class="sub-txt">Mobile 리뉴얼 프로젝트</p>
+						<p class="sub-txt">텐바이텐<br/>2020.10 - 2020.12</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">텐바이텐</p>
+						<p class="sub-txt">프로모션,마케팅 이벤트</p>
+						<p class="sub-txt">텐바이텐<br/>2020.09 - 2023.01</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">LG전자 세탁기 관리 시스템 프로젝트 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.07 - 2020.08</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">LG전자 모니터 화면검사 자동화 시스템 프로젝트 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.04 - 2020.06</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">LG전자 모니터 화면검사 자동화 시스템 프로젝트 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.03 - 2020.04</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">Lg 세탁기연구개발 Platform 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.02 - 2020.03</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">Lg 세탁기연구개발 Platform 개발</p>
+						<p class="sub-txt">amoeba<br/>2020.02 - 2020.03</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">LG sw solutions 개발</p>
+						<p class="sub-txt">amoeba<br/>2019.07 - 2019.10</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">SK hynix EGSS 고도화</p>
+						<p class="sub-txt">amoeba<br/>2019.02 - 2019.05</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">LG Thin Client 개발</p>
+						<p class="sub-txt">amoeba<br/>2018.09 - 2018.10</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">국립중앙박물관 뮤진 연간운영</p>
+						<p class="sub-txt">amoeba<br/>2017.10 - 2018.12</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">Ericsson LG 메시저 개발</p>
+						<p class="sub-txt">amoeba<br/>2018.03 - 2018.09</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">amoeba</p>
+						<p class="sub-txt">new KT.com 리뉴얼</p>
+						<p class="sub-txt">amoeba<br/>2017.02 - 2017.10</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">s2publising</p>
+						<p class="sub-txt">삼성카드 운영</p>
+						<p class="sub-txt">s2publising<br/>2013.06 - 2014.08</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">s2publising</p>
+						<p class="sub-txt">SKT T서비스 모바일 이벤트 페이지 운영</p>
+						<p class="sub-txt">s2publising<br/>2013.05 - 2013.06</p>
+					</div>
+					<div class="model-images">
+						<p class="tit">s2publising</p>
+						<p class="sub-txt">메가잉글리쉬/메가HRD 사이트 리뉴얼 프로젝트</p>
+						<p class="sub-txt">s2publising<br/>2013.02 - 2013.05</p>
+					</div>
+				</div>
+				<div class="button-container">
+					<button class="direction-button" id="left-arrow"><</button>
+					<span id="progress-bar-container"><span id="progress-bar"></span></span>
+					<button class="direction-button" id="right-arrow">></button>
+				</div>
+			</section>
+			<div class="blur-container" style="--blur:12vw;">
+				<div class="shape" style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);"></div>
+			  <div class="shape" 
+				  style="--path:polygon(50.9% 37.2%, 43.5% 34.7%, 33.6% 26.1%, 39.2% 10.8%, 26.2% 0.0%, 4.8% 6.4%, 0.0% 30.4%, 20.7% 37.2%, 33.4% 26.3%, 43.2% 34.9%, 45.0% 35.6%, 43.6% 46.4%, 37.8% 59.5%, 21.8% 63.2%, 11.7% 76.1%, 22.9% 91.3%, 47.4% 91.3%, 54.0% 79.0%, 38.0% 59.6%, 43.9% 46.4%, 45.2% 35.5%, 50.9% 37.6%, 56.1% 36.8%, 59.8% 47.6%, 70.3% 61.9%, 87.7% 56.0%, 96.4% 37.4%, 88.6% 15.1%, 63.7% 16.7%, 55.2% 33.6%, 55.9% 36.6%, 50.9% 37.2%);
+				  --offset:180deg;
+				  --speed: 6000ms;
+				  --background: linear-gradient( cyan, blue, green, purple, cyan);
+				  ">
+			  </div>
+		  	</div>
+			<!-- // -->
+		</div>
+	</div>
+	<div class="section section-contact" id="section3">
+		<div class="contact-wrap">
+			<div class="contact-info">
+				<h2>Contact Info</h2>
+				<div class="img-email"><img src="../img/email.svg" alt="mail"></div>
+				<div class="email">
+						<em>EMAIL :</em> <span>vhfhflsksk@gmail.com</span>
+				</div>
+				<div class="phone">
+						<em>PHONE :</em> <span>010-8795-4344</span>
+				</div>
+			</div>
+			<!-- <div class="wrap_map">
+				<div id="map" class="map-size"></div> 
+			</div> -->
+			<div class="container">
+				<div class="blob-container">
+				<div class="blob"></div>
+				<div class="blob one"></div>
+				<div class="blob two"></div>
+				<div class="blob three"></div>
+				<div class="blob four"></div>
+				<div class="blob five"></div>
+				<div class="blob six"></div>
+				<div class="blob seven"></div>
+				<div class="blob eight"></div>
+				<div class="blob nine"></div>
+				<div class="blob ten"></div>
+			</div>
+		</div>
+	</div>
+    <a href="#" class="top">Top</a>
+</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js"></script>
+</html>
